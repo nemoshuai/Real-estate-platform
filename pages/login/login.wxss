@@ -1,0 +1,9 @@
+/* pages/login/login.wxss */
+page{
+  padding:0 ;
+}
+.login{
+  background-color: #fff;
+  padding: 0 20rpx;
+  margin: 40rpx 0;
+}

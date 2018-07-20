@@ -1,0 +1,16 @@
+<!--pages/login/login.wxml--> 
+ <view class='login'>
+    <view class='section section-input'>
+      <view class='section__title'>账户</view>
+      <input type="text" placeholder='请输入账户' name="account"></input>
+    </view>
+    <view class='section section-input'>
+      <view class='section__title'>密码</view>
+      <input type="text" placeholder='请输入密码' name="password"></input>
+    </view>
+  </view>
+  <view>
+    <button class='certainBtn'>
+      确认
+    </button>
+  </view>

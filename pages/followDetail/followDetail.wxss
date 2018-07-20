@@ -1,0 +1,96 @@
+/* pages/followDetail/followDetail.wxss */
+
+.detail-top{
+  /* position: fixed;
+  top:0; */
+  background-color: #fff;
+  padding: 0rpx 30rpx 36px 30rpx;
+  font-size: 28rpx;
+  /* width: 100%; */
+}
+
+.detail-name{
+  position: relative;
+  font-size: 36rpx;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 20rpx 0;
+  clear:both;
+}
+
+.detail-name navigator::after{
+    position: absolute;
+    content: '';
+    display: inline-block; 
+    width: 8px;
+    height: 8px;
+    right: 0;
+    top:30rpx;
+    border-top: 1px solid #656565;
+    border-right: 1px solid #656565;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+
+}
+.detail-item{
+  display: flex;
+  flex-direction: row;
+  margin-top:20rpx;
+}
+.item-left{
+  color:  #d71f03;
+  width: 30%;
+}
+.item-left image{
+  width:40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+.item-content{
+  height: 40rpx;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+
+.detail-btn{
+  margin-top:20rpx;
+}
+.detail-btn button{
+  float: left;
+  width: 48%;
+  margin-right: 2%;
+  font-size: 28rpx;
+  border-radius: 0;
+}
+.time-axis{
+  border-left: 1px solid #a6a6a6;
+  margin-left: 50rpx;
+}
+.time-axis-li{
+  position: relative;
+  font-size: 28rpx;
+  color: #333;
+  padding: 0 0 20rpx 50rpx;
+  margin-top:20rpx;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.time-axis-li::after{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top:0;
+  left: -10rpx; 
+  width: 32rpx;
+  height: 32rpx;
+  border-radius:50%;
+  background-color:#a6a6a6;
+}
+.time-axis-li .li-text{
+  margin-bottom: 10rpx;
+}
+.font-gray{
+  font-size: 24rpx;
+  color: #bdbdbd;
+}

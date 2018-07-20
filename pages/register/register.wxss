@@ -1,0 +1,52 @@
+/* pages/register/register.wxss */
+.page-body{
+  padding: 16rpx 40rpx;
+  background-color: #fff;
+}
+/* .section{
+  border-bottom: solid 1px #eee;
+  overflow: hidden;
+  font-size: 32rpx;
+  color: #333;
+} */
+ .section-radio{
+   /* float: left;  */
+   padding-top:20rpx;
+} 
+.radio-group{
+  /* float: left; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #888;
+  max-width: 70%;
+  align-items: center;
+   /* margin-left:180rpx;  */
+  /* background-color: lightskyblue; */
+}
+
+.radio-group radio{
+  transform: scale(0.8);
+  margin-bottom: 20rpx;
+}
+.bottom-no{
+  border-bottom: 0;
+}
+.checkbox-group{
+  display: flex;
+  /* float: left; */
+  color: #888; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* margin-left:180rpx;  */
+}
+.checkbox-group checkbox{
+   margin-bottom: 21rpx;
+}
+.page-foot{
+  padding: 30rpx 40rpx;
+}
+/* .certainBtn{
+  background-color: red;
+  color: #fff;
+} */

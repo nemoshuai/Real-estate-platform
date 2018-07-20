@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/member/member",
+    "pages/register/register",
+    "pages/login/login",
+    "pages/follow/follow",
+    "pages/followDetail/followDetail"
+  ],
+  "window": {
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#D71F05",
+    "navigationBarTitleText": "房产平台",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#d71f03",
+    "borderStyle": "white",
+    "backgroundColor": "#f9f9f9",
+    "list": [
+      {
+        "text": "楼盘信息",
+        "pagePath": "pages/index/index",
+        "iconPath": "/pages/assets/images/zhuye.png",
+        "selectedIconPath": "/pages/assets/images/zhuyeActive.png"
+      },
+      {
+        "text": "客户登记",
+        "pagePath": "pages/register/register",
+        "iconPath": "/pages/assets/images/xiangmu.png",
+        "selectedIconPath": "/pages/assets/images/xiangmuActive.png"
+      },
+      {
+        "text": "会员中心",
+        "pagePath": "pages/member/member",
+        "iconPath": "/pages/assets/images/geren.png",
+        "selectedIconPath": "/pages/assets/images/gerenActive.png"
+      }
+    ]
+  }
+}

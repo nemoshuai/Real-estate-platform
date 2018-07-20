@@ -1,0 +1,45 @@
+/**app.wxss**/
+ /* .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+   padding: 200rpx 0; 
+  box-sizing: border-box;
+}   */
+.container{
+  height: 100%;
+  background-color: #f2f2f2;
+}
+page{
+   background-color: #f2f2f2;
+}
+/***表单***/
+.certainBtn{
+  background-color: #d71f03;
+  color: #fff;
+}
+.section{
+  display: flex;
+  border-bottom: solid 1px #e5e5e5;
+  overflow: hidden; 
+  font-size: 32rpx;
+  color: #333;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.section-input{
+  height: 92rpx;
+  line-height: 92rpx;
+}
+.section__title{
+  float: left;
+  padding-right: 10rpx;
+  /* background-color: lightpink; */
+}
+
+.section-input input{
+  height: 92rpx;
+  color: #888;
+}

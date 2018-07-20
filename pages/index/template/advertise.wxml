@@ -1,0 +1,18 @@
+<template name="advertise">
+  <view class='advertise-list'>
+    <template is="advertiseItem" data="{{item}}" wx:for="{{advertiseList}}" wx:key="{{item.Id}}">
+    </template>
+  </view>
+</template>
+
+<template name="advertiseItem">
+   <navigator url="{{item.link}}" class="advertise-item">
+          <image src="{{item.poster}}" alt="" class='advertise-poster'></image>
+          <view class='advertise-info'>
+             <text class='advertise-title'>{{item.title}}</text>
+             <text>楼盘地址：{{item.address}}</text>
+             <text>建筑类型：{{item.buildingType}}</text>
+             <text class='advertise-price'>{{item.price}}元/m²</text>
+          </view>
+   </navigator>  
+</template>

@@ -1,0 +1,31 @@
+<!--pages/followDetail/followDetail.wxml-->
+<view class='detail-page'>
+  <view class='detail-top'> 
+    <view class='detail-name'>
+      <navigator url="">
+         礼包
+      </navigator>
+    </view>
+    <view class='detail-item' data="{{item}}" wx:for="{{detailList}}" wx:key="{{item.id}}">
+      <view class='item-left'>
+        <image src='{{item.imageUrl}}' class="item-icon"></image>
+        <text>{{item.title}}</text>
+      </view>
+      <view class='item-content'>
+        {{item.content}}
+      </view>
+    </view>
+    <view class='detail-btn'>
+      <button class='certainBtn btnItem'>联系客户</button>
+      <button class='certainBtn btnItem'>跟进等级</button>
+    </view>
+  </view>
+  <view class='time-axis'>
+   <view class='time-axis-li' data="{{item}}" wx:for="{{timeList}}" wx:key="{{item.Id}}">
+     <view class='li-text'>预约来访</view>
+     <view class='li-text'>预约时间：{{item.handlerStart}}</view>
+     <view class='li-text font-gray'>操作人：{{item.operator}}</view>
+     <view class='li-text font-gray'>预约时间：{{item.handlerEnd}}</view>
+   </view>
+  </view>
+</view>

@@ -1,0 +1,30 @@
+/* pages/follow/follow.wxss */
+page{
+  background-color: #fff;
+}
+.follow-list{
+  padding: 0 25rpx;
+}
+.follow-item{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  border-bottom: 1px solid #e5e5e5;
+  align-items: center;
+  padding: 20rpx 0;
+  font-size: 32rpx;
+  color: #333;
+}
+.follow-name{
+  width: 20%;
+}
+.follow-address{
+  font-size: 28rpx;
+  color: #ababab;
+  width: 40%;
+}
+.text-over{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

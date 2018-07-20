@@ -1,0 +1,122 @@
+<!--pages/register/register.wxml-->
+<view class='container'>
+  <view class='page-body'>
+    <form class='page-section'>
+      <view class='section section-input'>
+          <view class="section__title">客户姓名</view>
+          <input  bindinput="bindKeyInput" placeholder=""/>
+      </view>
+      <view class='section section-input'>
+          <view class="section__title">电话</view>
+          <input  bindinput="bindKeyInput" placeholder=""/>
+      </view>
+      <view class='section section-input'>
+          <view class="section__title">户籍</view>
+          <input  bindinput="bindKeyInput" placeholder=""/>
+      </view>
+      <view class='section section-radio'>
+          <view class="section__title">年龄范围</view>
+          <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{ageRange}}" wx:key="{{item.Id}}">
+              <radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.value}}
+            </label>
+          </radio-group>
+      </view>
+      <view class='section section-radio'>
+          <view class="section__title">职业</view>
+          <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{profession}}" wx:key="{{item.Id}}">
+              <radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.value}}
+            </label>
+          </radio-group>
+      </view>
+      <view class='section section-input'>
+          <view class="section__title">客户性格</view>
+          <input  bindinput="bindKeyInput" placeholder=""/>
+      </view>
+      <view class='section section-input'>
+          <view class="section__title">住址</view>
+          <input  bindinput="bindKeyInput" placeholder=""/>
+      </view>
+      <view class='section section-radio'>
+          <view class="section__title">广州</view>
+          <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{hasHouse}}" wx:key="{{item.Id}}">
+              <radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.value}}
+            </label>
+          </radio-group>
+      </view>
+      <view class='section section-radio'>
+          <view class="section__title">交通工具</view>
+          <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{traffic}}" wx:key="{{item.Id}}">
+              <radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.value}}
+            </label>
+          </radio-group>
+      </view>
+        <view class='section section-input'>
+          <view class="section__title">距离接受范围</view>
+          <input  bindinput="bindKeyInput" placeholder=""/>
+      </view>
+        <view class='section section-radio'>
+          <view class="section__title">购房类型</view>
+          <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{buyType}}" wx:key="{{item.Id}}">
+              <radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.value}}
+            </label>
+          </radio-group>
+      </view>
+        <view class='section section-radio'>
+          <view class="section__title">可看房时间</view>
+          <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{visitTime}}" wx:key="{{item.Id}}">
+              <radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.value}}
+            </label>
+          </radio-group>
+      </view>
+        <view class='section section-radio'>
+          <view class="section__title">购房需求</view>
+          <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{houseCommand}}" wx:key="{{item.Id}}">
+              <radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.value}}
+            </label>
+          </radio-group>
+      </view>
+        <view class='section section-radio'>
+          <view class="section__title">付款方式</view>
+          <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{payMode}}" wx:key="{{item.Id}}">
+              <radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.value}}
+            </label>
+          </radio-group>
+      </view>
+        <view class='section section-radio'>
+          <view class="section__title">意向区域楼盘</view>
+          <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{intentionArea}}" wx:key="{{item.Id}}">
+              <radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.value}}
+            </label>
+          </radio-group>
+      </view>
+        <view class='section section-radio'>
+          <view class="section__title">项目吸引点</view>
+          <checkbox-group class="checkbox-group" bindchange="checkboxChange">
+            <label class="checkbox" wx:for="{{attractivePoint}}" wx:key="{{item.Id}}">
+              <checkbox value="{{item.value}}" checked="{{item.checked}}"/>{{item.value}}
+            </label>
+          </checkbox-group>
+      </view>
+        <view class='section section-radio bottom-no'>
+          <view class="section__title">老带新</view>
+          <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{oldNew}}" wx:key="{{item.Id}}">
+              <radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.value}}
+            </label>
+          </radio-group>
+      </view>
+      </form>
+  </view>
+  <view class='page-foot'>
+    <button formType="submit" class='certainBtn'>确定</button>
+  </view>
+</view>

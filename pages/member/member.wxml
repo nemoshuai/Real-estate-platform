@@ -1,0 +1,21 @@
+<!--pages/member/member.wxml-->
+<!-- <view class='container'> -->
+  <view class='page-body'>
+     <view class='page-section user-card'>
+        <view class='user-avatar'>
+          <image src="{{user.avatarUrl}}"></image>
+          <text wx:if="{{user.certified}}" class="user-certified">已认证</text>
+          <text wx:else class="user-certified">未认证</text>
+        </view>
+        <view class='user-info'>
+           <text>已报备项目数量：{{user.report}}单</text>
+           <text>已完成项目数量：{{user.finish}}单</text>
+           <text>已赚取佣金：{{user.commission}}万元</text>
+        </view>
+     </view>
+      <view class='page-section banner'>
+        <import src="../index/template/banner.wxml"/>
+        <template is="banner" data="{{bannerIcon}}"/>
+     </view>
+  </view>
+<!-- </view> -->

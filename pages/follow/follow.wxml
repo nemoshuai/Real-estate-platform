@@ -1,0 +1,10 @@
+<!--pages/follow/follow.wxml-->
+<view class='follow-content'>
+  <view class='follow-list'>
+     <navigator class='follow-item' url="{{item.link}}" data="{{item}}" wx:for="{{followList}}" wx:key="{{item.Id}}" >
+        <view class="follow-name text-over">{{item.name}}</view>
+        <view class="follow-address text-over">{{item.address}}</view>
+        <view class="follow-num">{{item.num}}</view>
+     </navigator>
+  </view>
+</view>
